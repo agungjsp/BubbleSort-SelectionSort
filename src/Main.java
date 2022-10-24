@@ -52,25 +52,25 @@ public class Main {
                 // Call bubbleSortAscending method
                 BubbleSort.Ascending(data);
                 // Ask user to continue or exit
-                userExit(menuItems);
+                userExit();
             }
             case "selectionSortAscending" -> {
                 // Call bubbleSortAscending method
                 SelectionSort.Ascending(data);
                 // Ask user to continue or exit
-                userExit(menuItems);
+                userExit();
             }
             case "bubbleSortDescending" -> {
                 // Call bubbleSortAscending method
                 BubbleSort.Descending(data);
                 // Ask user to continue or exit
-                userExit(menuItems);
+                userExit();
             }
             case "selectionSortDescending" -> {
                 // Call bubbleSortAscending method
                 SelectionSort.Descending(data);
                 // Ask user to continue or exit
-                userExit(menuItems);
+                userExit();
             }
             case "exit" -> exit();
 
@@ -78,7 +78,7 @@ public class Main {
     }
 
     // Create method that ask user to continue or exit
-    public static void userExit(ArrayList<MenuItem> menuItems) {
+    public static void userExit() {
         System.out.print("\nTekan Y untuk melanjutkan atau N untuk keluar: ");
         String continueOrExit = new java.util.Scanner(System.in).nextLine();
         if (continueOrExit.equalsIgnoreCase("y")) {

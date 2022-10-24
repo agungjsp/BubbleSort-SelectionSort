@@ -9,7 +9,6 @@ public class RandomData {
         return Main.randomNumber;
     }
 
-
     // Add random data to list
     // Avoid duplicate data
     public static void addRandomData(int dataCount, int lowerBound, int upperBound) {
